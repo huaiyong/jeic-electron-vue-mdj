@@ -97,7 +97,7 @@ function api() {
     console.log(path.join(__static, 'static'))
 	appHttp.use('/static', express.static(path.join(__static, '')));
 
-
+/*
 
     // office online 反向代理   牡丹江环境使用
 	var http = require('http'), httpProxy = require('http-proxy');
@@ -122,7 +122,7 @@ function api() {
 	console.log("listening on port 80")
 	server1.listen(80);
 
-
+*/
 }
 
 
