@@ -30,7 +30,7 @@
   "build": {
     "productName": "捷成智慧课堂",
     "copyright": "北京捷成世纪科技股份有限公司",
-    "appId": "org.huaiyong.jeic-electron-vue",
+    "appId": "org.huaiyong.jeic-electron-vue-mdj.git",
     "directories": {
       "output": "build"
     },
