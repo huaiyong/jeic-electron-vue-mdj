@@ -56,7 +56,10 @@ var showWordsrc;
         , success: function (res) {
             if (res.ret == 200) {
                 var localIp = window.location.host;
-                showWordsrc = res.result.viewURL.officeView.replace("localhost",localIp.substr(0,localIp.indexOf(":")));
+				//牡丹江测试环境发版
+                //showWordsrc = res.result.viewURL.officeView.replace("localhost","218.9.54.195");
+				//保定/牡丹江生产环境发版
+				showWordsrc = res.result.viewURL.officeView;
                 $("#showWordsrc").attr("src", showWordsrc);
             }
         }

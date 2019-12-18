@@ -56,7 +56,10 @@ var excelsrc;
         , success: function (res) {
             if (res.ret == 200) {
                 var localIp = window.location.host;
-                excelsrc = res.result.viewURL.officeView.replace("localhost",localIp.substr(0,localIp.indexOf(":")));
+				//牡丹江发版
+                //excelsrc = res.result.viewURL.officeView.replace("localhost","218.9.54.195");
+				//保定给发版
+				excelsrc = res.result.viewURL.officeView;
                 $("#excelsrc").attr("src", excelsrc);
             }
         }
