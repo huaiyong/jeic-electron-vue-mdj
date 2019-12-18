@@ -32,7 +32,7 @@
 			</div>
 			<ul>
 				<li><span>投票数量：</span><div class="count"><button @click="subCount()" :disabled="count<2">-</button><span v-text="count"></span><button @click="addCount()" :disabled="count>optionList.length-2">+</button></div></li>
-				<li><span>记票方式：</span><div class="mode"><button :class="{'active':model==1}" @click="switchModel(1)">匿名</button><button :class="{'active':model==2}" @click="switchModel(2)">实名</button></div></li>
+				<li><span>记票方式：</span><div class="mode"><button :class="{'active':model==1}" @click="switchModel(1)">匿名</button><button :class="{'active':model==2}" @click="switchModel(2)" style="display: none;">实名</button></div></li>
 			</ul>
 			<button class="sureBtn" @click="sureRule()">确认</button>
 		</div>
